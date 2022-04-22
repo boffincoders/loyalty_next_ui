@@ -1,116 +1,58 @@
 .container {
-  padding: 0 2rem;
-}
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+  height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
+.freeTrial {
+  background-color: white;
+  border: 1px solid #4eafea;
+  width: 178px;
+  height: 49px;
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  text-align: center;
+  color: #4eafea;
+  font-size: 13px;
+}
+.freeTrial:hover {
+  background-color: #4eafea;
+  color: white;
+  cursor: pointer;
+}
+.button {
+  background-color: white;
+  color: #ff3d5a;
+  width: 465px;
+  border: 1px solid #ff3d5a;
+  height: 60px;
+  border-radius: 6px;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.button:hover {
+  text-decoration: none;
+  background-color: #ff3d5a;
+  color: white;
 }
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.signInButton {
+  background-color: #ff3d5a;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
 }
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.signInButton:hover {
+  background-color: #ff3d5a;
+  color: white;
 }
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.footer {
+  background-color: #f7f8ff;
+  padding: 8px;
 }
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.css-7rb4uv-MuiGrid-root {
+  width: calc(100% + 16px) !important;
+  margin-left: -16px !important;
+  height: 300px !important;
+  overflow: hidden !important;
+  overflow-y: scroll !important;
 }

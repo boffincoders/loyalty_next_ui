@@ -1,0 +1,22 @@
+.appBar {
+  background: #ffffff;
+  color: black;
+  margin: 10px 15px 10px 10px;
+}
+.appbarTitle {
+  color: #000000;
+  font-weight: bold;
+  margin-left: 10;
+}
+
+.logout {
+  color: #ff3d5a;
+}
+@media only screen and (max-width: 500px) {
+  .appbarTitle {
+    display: none;
+  }
+  .logout {
+    display: none;
+  }
+}

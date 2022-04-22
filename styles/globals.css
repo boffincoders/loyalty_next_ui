@@ -1,16 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Poppins !important;
+  /* background-color: #f5f7fb; */
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
+html {
+  font-family: Poppins !important;
+}
 * {
   box-sizing: border-box;
+  font-family: Poppins !important;
+}
+.active-menu-class {
+  background-color: white;
+  color: "black";
+  border-radius: 10px;
+  /* margin: 10px; */
+}
+.active-menu-class:hover {
+  background-color: white;
+  color: "black";
+}
+.css-rsu11t-MuiDrawer-docked .MuiDrawer-paper {
+  box-sizing: border-box;
+  width: 240px;
+  background: #808393;
+  border-radius: 48px;
+  color: white;
+  overflow-x: hidden;
+}
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+  /* background-color: #f5f7fb; */
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: none;
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  z-index: 1200;
+  -webkit-overflow-scrolling: touch;
+  position: fixed;
+  top: 0;
+  outline: 0;
+  left: 0;
+  border-right: "0px solid white" !important;
+}
+.css-bshv44-MuiButtonBase-root-MuiListItem-root:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: none !important;
+}
+.css-d9c359-MuiButtonBase-root-MuiToggleButton-root.Mui-selected {
+  color: white;
+  background-color: #4eadea;
+  text-transform: lowercase;
+}
+.css-1gjgmky-MuiToggleButtonGroup-root
+  .MuiToggleButtonGroup-grouped:not(:first-of-type) {
+  margin-left: -1px;
+  border-left: 1px solid transparent;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  text-transform: lowercase;
+}
+.css-1gjgmky-MuiToggleButtonGroup-root
+  .MuiToggleButtonGroup-grouped:not(:last-of-type) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  text-transform: lowercase;
+}
+.css-1ek30h3-MuiTableRow-root {
+  color: inherit;
+  display: table-row;
+  vertical-align: middle;
+  outline: 0;
+  background: #f7faff;
+  border: -2px solid #90a6c9 !important;
+  border-radius: 20px;
+}
+@media (prefers-reduced-motion: no-preference) {
+}
+:root {
+  scroll-behavior: smooth;
+}
+@media only screen and (max-width: 900px) {
+  .rightTabs {
+    display: none;
+   
+  }
+  .mainContainer {
+    width : 100%
+  }
+  .css-1cqt7r0-MuiGrid-root {
+ 
+    padding : 0px 0px 0px 0px;
+   
+  }
+  .horizontalTabs {
+    display: block;
+  }
+  .mainGridContainer{
+    height: 100vh !important;
+  
+  }
+
+}
+@media only screen and (min-width: 900px) {
+  .horizontalTabs {
+    display: none;
+  }
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
