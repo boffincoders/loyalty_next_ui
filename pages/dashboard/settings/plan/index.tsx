@@ -5,7 +5,7 @@ const Plan = () => {
     <Grid
       container
       columnSpacing={{ xs: 2, sm: 3, md: 2 }}
-      sx={{ p: 10 }}
+      sx={{ p: 6 }}
     >
       <Grid><Typography color={'#000000'} fontSize={22} fontWeight="600" >
         Your Plan

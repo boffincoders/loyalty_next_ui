@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import styles from "../../styles/Dashboard.module.css";
 import React from "react";
-import { Grid, Box, Stack, styled } from "@mui/material";
+import { Grid, Box, Stack, styled, Typography } from "@mui/material";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 const GraphHeader = styled("div")({
   display: "flex",
@@ -113,7 +113,7 @@ const DashboardLayout = () => {
                 flexDirection: { sm: "row", xs: "column" },
               }}
             >
-              <b>View By</b>
+              <Typography p={1}>View By</Typography>
               <Stack
                 display={"flex"}
                 justifyContent={"space-between"}
@@ -179,7 +179,7 @@ const DashboardLayout = () => {
                 flexDirection: { sm: "row", xs: "column" },
               }}
             >
-              <b className="p-2">View By</b>
+              <Typography p={1}>View By</Typography>
               <Stack
                 display={"flex"}
                 justifyContent={"space-between"}

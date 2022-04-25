@@ -57,6 +57,7 @@ const ChoosePlan = () => {
             justifyContent: "space-around",
             alignItems: "center",
             height: 500,
+            textAlign : "center",
             flexDirection: "column",
           }}
         >
@@ -110,6 +111,7 @@ const ChoosePlan = () => {
             justifyContent: "space-around",
             alignItems: "center",
             height: 500,
+            textAlign : "center",
             padding: "10px 10px 10px 10px",
             flexDirection: "column",
           }}

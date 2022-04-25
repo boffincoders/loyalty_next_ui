@@ -68,17 +68,21 @@ const MainTab = () => {
   return (
     <Grid
       component={"div"}
-       className={"mainGridContainer"}
+      //  className={"mainGridContainer"}
       item
       container
       bgcolor={"#808393"}
-      sx={{ padding: "8% 1% 15% 1%" }}
-      height={"100vh"}
+      display="flex"
+      justifyContent={"center"}
+      alignItems={"center"}
+      height="100vh"
+      p={3}
     >
-   
       <Grid
         item
-        xs={12} md={2} sm={12}
+        xs={12}
+        md={2}
+        sm={12}
         sx={{
           alignItems: { xs: "center" },
           justifyContent: { xs: "center" },
@@ -95,7 +99,7 @@ const MainTab = () => {
             borderRight: 1,
             borderColor: "divider",
             backgroundColor: "#F5F7FB",
-            height: "100%",
+            // height: "100%",
             borderTopLeftRadius: 10,
             borderBottomLeftRadius: 10,
             padding: { xs: 0 },
@@ -191,29 +195,33 @@ const MainTab = () => {
       </Grid>
       <Grid
         item
-        xs={12} md={6} sm={12}
+        xs={12}
+        md={6}
+        sm={12}
         bgcolor="#F5F7FB"
         sx={{
           borderTopRightRadius: 10,
           borderBottomRightRadius: 10,
           width: { xs: "100%" },
+          
         }}
         className="mobileContainer"
       >
-        <Grid item sm={12} className="horizontalTabs">
+        <Grid item xs={12} md={6} sm={12} className="horizontalTabs" >
           <Tabs
+          
             TabIndicatorProps={{ style: { display: "none" } }}
             orientation="horizontal"
             value={value}
             onChange={handleChange}
-           
+            
           >
             {tabs.map((value, index) => {
               return (
                 <Tab
                   key={index}
                   onClick={() => setIsActive(index)}
-                  style={{paddingInline : '3.5em'}}
+                  style={{ paddingInline: "3.5em" }}
                   label={
                     <Box
                       style={{
@@ -240,13 +248,14 @@ const MainTab = () => {
           </Tabs>
           <Divider />
         </Grid>
+        <div style={{height : 677, overflow : "hidden",overflowY : "scroll"}}>
         {tabComponents.map((tab, index) => (
           <TabPanel value={value} key={index} index={index}>
             {tab.component}
           </TabPanel>
         ))}
+        </div>
       </Grid>
-     
     </Grid>
   );
 };

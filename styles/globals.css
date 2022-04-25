@@ -108,16 +108,14 @@ html {
     width : 100%
   }
   .css-1cqt7r0-MuiGrid-root {
- 
-    padding : 0px 0px 0px 0px;
-   
+    padding : 0px 0px 0px 0px;  
   }
   .horizontalTabs {
     display: block;
   }
   .mainGridContainer{
     height: 100vh !important;
-  
+   
   }
 
 }
@@ -130,3 +128,4 @@ html {
   width: 0px;
   background: transparent; /* make scrollbar transparent */
 }
+

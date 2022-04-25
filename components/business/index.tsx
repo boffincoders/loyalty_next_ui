@@ -102,19 +102,9 @@ const Business = () => {
   };
   const YourBusinessPart1 = () => {
     return (
-      <Grid container columnSpacing={{ xs: 2, sm: 2, md: 3 }} p={3}>
-        {/* <Typography
-          style={{
-            fontSize: 26,
-            color: "#0D152E",
-            fontWeight: "700",
-          }}
-        >
-          Your business
-        </Typography> */}
+      <Grid container columnSpacing={{ xs: 2, sm: 2, md: 3 }} p={2}>
         <Grid item sm={4} sx={{ width: { xs: "100%" } }}>
           <div style={{ fontSize: 14, color: "#000000" }}>Your Logo</div>
-
           <Box
             mt={1}
             style={{
@@ -208,15 +198,6 @@ const Business = () => {
   const YourBusinessPart2 = () => {
     return (
       <div style={{ marginLeft: 20 }} className="container-fluid">
-        <div
-          style={{
-            fontSize: 26,
-            color: "#0D152E",
-            fontWeight: "700",
-          }}
-        >
-          Your business
-        </div>
         <div style={{ color: "#393939", fontWeight: "700" }}>
           Location &nbsp; (where will stamps be collected by customers?):
         </div>
@@ -403,6 +384,9 @@ const Business = () => {
   };
   return (
     <>
+     <Typography variant="h5" p={1}>
+        Your Business
+      </Typography>
       <SwipeableViews
         enableMouseEvents
         index={index}

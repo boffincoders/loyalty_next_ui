@@ -8,10 +8,10 @@ const LoyalitySchema = () => {
     <Grid
       container
       columnSpacing={{ xs: 2, sm: 2, md: 3 }}
-      p={3}
+      p={2}
       rowSpacing={2}
     >
-      <h3>Loyalty Scheme</h3>
+      <h2>Loyalty Scheme</h2>
       <Grid
         p={2}
         style={{ border: "1px solid #DADADA", borderRadius: 8 }}
@@ -153,7 +153,7 @@ const LoyalitySchema = () => {
           </div>
         </div>
       </Grid>
-      <Grid item sm={12} sx={{width :{xs :"100%"}}}>
+      <Grid item sm={12} sx={{ width: { xs: "100%" } }}>
         <Box
           style={{
             border: "1px dashed #4EADEA",
@@ -168,22 +168,19 @@ const LoyalitySchema = () => {
         >
           Add Another Card
         </Box>
-     
       </Grid>
-     
-        <Button
-          fullWidth
-          endIcon={<ArrowForwardIcon />}
-          style={{
-            background: "#FF3D5A",
-            marginTop: 25,
-            color: "white",
-          }}
-        >
-          Save and Continue &nbsp;
-        </Button>
-       
-    
+
+      <Button
+        fullWidth
+        endIcon={<ArrowForwardIcon />}
+        style={{
+          background: "#FF3D5A",
+          marginTop: 25,
+          color: "white",
+        }}
+      >
+        Save and Continue &nbsp;
+      </Button>
     </Grid>
   );
 };

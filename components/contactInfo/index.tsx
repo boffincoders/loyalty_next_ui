@@ -4,11 +4,12 @@ import Link from "next/link";
 import React from "react";
 const ContactInfo = () => {
   return (
-    <Grid rowSpacing={1} container columnSpacing={{ xs: 2, sm: 2, md: 3 }}>
-      {/* <Box><Typography variant="h5" p={2}>
+    <>
+      <Typography variant="h5">
         Contact Info
       </Typography>
-        </Box> */}
+        
+    <Grid rowSpacing={1} container columnSpacing={{ xs: 2, sm: 2, md: 3 }}>
       <Grid item sm={6} mt={1}sx ={{width : {xs : "100%"}}}>
         <b>Business Name</b>
         <TextField
@@ -74,6 +75,8 @@ const ContactInfo = () => {
        
       {/* </Grid>/ */}
     </Grid>
+    </>
+    
   );
 };
 
